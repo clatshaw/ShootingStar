@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Settings for Ned's Turkey Farm -->
+
+<settings>
+
+  <!-- general settings -->
+
+  <game name="Shooting Star"/>
+
+  <!-- renderer settings -->
+
+  <renderer width="768" height="800" shadermodel="5_0"/>
+
+  <!-- image file names -->
+
+  <images>
+    <image src="Images\bg0.png" />
+    <image src="Images\bg1.png" />
+    <image src="Images\bg2.png" />
+    <image src="Images\bg3.png" />
+    <image src="Images\floor0.png" />
+    <image src="Images\floor1.png" />
+    <image src="Images\floor2.png" />
+    <image src="Images\floor3.png" />
+    <image src="Images\black.png" />
+    <image src="Images\platformblock.png" />
+    <image src="Images\bg33.png" />
+  </images>
+  
+  <!-- sprites -->
+  
+  <sprites>
+    <sprite name="star" file="Images\star" ext="png" frames="1"/>
+    <sprite name="camera1" file="Images\onelife" ext="png" frames="1"/>
+    <sprite name="camera2" file="Images\twolives" ext="png" frames="1"/>
+    <sprite name="camera3" file="Images\threelives" ext="png" frames="1"/>
+    <sprite name="camera4" file="Images\fourlives" ext="png" frames="1"/>
+    <sprite name="camera5" file="Images\fivelives" ext="png" frames="1"/>
+    <sprite name="welcome" file="Images\screentitle" ext="png" frames="1"/>
+    <sprite name="winlevel" file="Images\youwin" ext="png" frames="1"/>
+    <sprite name="loselevel" file="Images\youlose" ext="png" frames="1"/>
+    <sprite name="wingame" file="Images\screengamewin" ext="png" frames="1"/>
+    <sprite name="losegame" file="Images\screengameover" ext="png" frames="1"/>
+
+    <sprite name="leftwateralien" file="Images\wateralien" ext="png" frames="4"/>
+    <sprite name="rightwateralien" file="Images\wateraliendead" ext="png" frames="4"/>
+    <sprite name="hud" file="Images\hud" ext="png" frames="1"/>
+    
+    <sprite name="smallcloud" file="Images\smallcloud" ext="png" frames="1"/>
+    <sprite name="longcloud" file="Images\longcloud" ext="png" frames="1"/>
+    <sprite name="darkcloud" file="Images\darkcloud" ext="png" frames="1"/>
+  
+    <sprite name="parbstatue" file="Images\parbstatue" ext="png" frames="1"/>
+  
+    <sprite name="extralife" file="Images\extralife" ext="png" frames="4"/>
+    
+    <sprite name="leftalien" file="Images\leftalien" ext="png" frames="7"/>
+    <sprite name="rightalien" file="Images\rightalien" ext="png" frames="7"/>
+    <sprite name="leftasteroid" file="Images\asteroidleft" ext="png" frames="1"/>
+    <sprite name="rightasteroid" file="Images\asteroidright" ext="png" frames="1"/>
+
+    <sprite name="cutscene1" file="Images\cutscene0" ext="png" frames="1"/>
+    <sprite name="cutscene2" file="Images\cutscene1" ext="png" frames="1"/>
+    <sprite name="cutscene3" file="Images\cutscene2" ext="png" frames="1"/>
+    <sprite name="cutscene4" file="Images\cutscene3" ext="png" frames="1"/>
+    <sprite name="cutscene5" file="Images\cutscene4" ext="png" frames="1"/>
+    <sprite name="cutscene6" file="Images\cutscene5" ext="png" frames="1"/>
+    <sprite name="cutscene7" file="Images\cutscene6" ext="png" frames="1"/>
+
+    <sprite name="instruction" file="Images\instruction0" ext="png" frames="1"/>
+  </sprites>
+
+  <!-- objects-->
+
+  <objects>
+    <object name="star"
+      frameinterval="400"
+      cycle="1"
+    />
+
+    <object name="camera"
+      frameinterval="400"
+      cycle="1"
+    />
+
+    <object name="welcome"
+      frameinterval="400"
+      cycle="1"
+    />
+
+    <object name="leftwateralien"
+      frameinterval="250" 
+      cycle="1"
+      animation="0,1,2,3,2,1"
+    />
+
+    <object name="rightwateralien"
+      frameinterval="250"
+      cycle="1"
+      animation="0,1,2,3,2,1"
+    />
+
+    <object name="extralife"
+      frameinterval="250" 
+      cycle="1"
+      animation="0,1,2,3,2,1"
+    />
+  
+    <object name="leftalien"
+      frameinterval="250" 
+      cycle="1"
+      animation="0,1,2,3,4,5,6,0,0,0,0,0"
+    />
+  
+    <object name="rightalien"
+      frameinterval="250" 
+      cycle="1"
+      animation="0,1,2,3,4,5,6,0,0,0,0,0"
+    />
+  </objects>
+
+  <!-- instances-->
+
+  <instances>
+  </instances>
+
+  <!-- sounds-->
+
+  <sounds>
+    <sound file="Sounds\opening.wav" instances="1"/>
+    <sound file="Sounds\water.wav" instances="1"/>
+    <sound file="Sounds\cave.wav" instances="1"/>
+    <sound file="Sounds\cosmic.wav" instances="1"/>
+    <sound file="Sounds\space.wav" instances="1"/>
+  </sounds>
+  
+  <!-- debugger settings -->
+
+  <debug linenumber="1" header="1">
+    <file select="1" name="debug.txt"/>
+    <debugger select="1"/>
+    <ip select="1" address="127.0.0.1" port="1617"/>
+  </debug>
+
+</settings>
